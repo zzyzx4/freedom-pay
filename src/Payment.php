@@ -20,7 +20,7 @@ class Payment
         ]);
 
         $client = new Client();
-        $url = 'http://127.0.0.1:8000/api/v1/payment/create';
+        $url = 'https://payment.ffin.life/api/v1/payment/create';
 
         try {
             $response = $client->post($url, [
