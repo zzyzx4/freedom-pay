@@ -28,7 +28,9 @@ class Payment
             ]);
             $response_body = $response->getBody()->getContents();
             return json_decode($response_body, true);
-        } catch (\GuzzleHttp\Exception\RequestException $e) {
+        }
+        catch (\GuzzleHttp\Exception\RequestException $e)
+        {
             \Illuminate\Support\Facades\Log::error('Guzzle request error: ' . $e->getMessage());
         }
     }
