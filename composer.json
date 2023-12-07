@@ -1,0 +1,16 @@
+{
+    "name": "zzyzx4/freedom-pay",
+    "description": "Later",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zzyzx4\\FreedomPay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dastan Abdrakhmanov"
+        }
+    ],
+    "require": {}
+}
