@@ -11,8 +11,8 @@ class Payment
     public static function create(Request $request)
     {
         $data = $request->validate([
-            'pg_amount' => 'required|integer',
-            'client_uin' => 'required|integer',
+            'pg_amount' => 'required|float',
+            'client_uin' => 'required|string',
             'pg_order_id' => 'required',
             'pg_success_url' => 'url',
             'pg_failure_url' => 'url',
