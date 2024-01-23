@@ -19,7 +19,7 @@ class Payment
             'resource' => 'required',
         ]);
 
-        $client = new Client();
+        $client = new Client(['verify' => false]);
         $url = 'https://payment.ffin.life/api/v1/payment/create';
 
         try {
