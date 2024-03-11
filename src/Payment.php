@@ -22,6 +22,7 @@ class Payment
         $client = new Client(['verify' => false]);
         $url = 'https://curiosity.kz/api/v1/payment/create';
 
+
         try {
             $response = $client->post($url, [
                 'form_params' => $data,
