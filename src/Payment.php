@@ -20,7 +20,7 @@ class Payment
         ]);
 
         $client = new Client(['verify' => false]);
-        $url = 'https://payment.ffin.life/api/v1/payment/create';
+        $url = 'https://curiosity.kz/api/v1/payment/create';
 
         try {
             $response = $client->post($url, [
